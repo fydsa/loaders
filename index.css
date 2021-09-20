@@ -1,9 +1,9 @@
 :root {
-  --point-one: #eb68a7;
-  --point-two: #fdb7c1;
-  --point-three: #fef490;
-  --point-four: #d1b3eb;
-  --point-five: #b3ebd6;
+  --dot-one: #eb68a7;
+  --dot-two: #fdb7c1;
+  --dot-three: #fef490;
+  --dot-four: #d1b3eb;
+  --dot-five: #b3ebd6;
   --black: #000000;
 }
 
@@ -39,23 +39,23 @@ div > div {
 }
 
 div > div:nth-child(1) {
-  background-color: var(--point-one);
+  background-color: var(--dot-one);
 }
 
 div:nth-child(2) {
-  background-color: var(--point-two);
+  background-color: var(--dot-two);
 }
 
 div:nth-child(3) {
-  background-color: var(--point-three);
+  background-color: var(--dot-three);
 }
 
 div:nth-child(4) {
-  background-color: var(--point-four);
+  background-color: var(--dot-four);
 }
 
 div:nth-child(5) {
-  background-color: var(--point-five);
+  background-color: var(--dot-five);
 }
 
 @keyframes all-rotate {
@@ -69,6 +69,21 @@ div:nth-child(5) {
   }
   75% {
     transform: rotate(-90deg);
+  }
+  100% {
+  }
+}
+
+@keyframes blink-animation {
+  0% {
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+  }
+  75% {
+    visibility: hidden;
   }
   100% {
   }
