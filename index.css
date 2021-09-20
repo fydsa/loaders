@@ -4,4 +4,72 @@
   --point-three: #fef490;
   --point-four: #d1b3eb;
   --point-five: #b3ebd6;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  width: 100vw;
+  height: 100vh;
+}
+
+.loader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+  height: 70%;
+  animation: all-rotate 1.5s ease-in-out 0.1s infinite;
+}
+
+div > div {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+div > div:nth-child(1) {
+  background-color: var(--point-one);
+}
+
+div:nth-child(2) {
+  background-color: var(--point-two);
+}
+
+div:nth-child(3) {
+  background-color: var(--point-three);
+}
+
+div:nth-child(4) {
+  background-color: var(--point-four);
+}
+
+div:nth-child(5) {
+  background-color: var(--point-five);
+}
+
+@keyframes all-rotate {
+  0% {
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-90deg);
+  }
+  100% {
+  }
 }
