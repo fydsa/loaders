@@ -29,7 +29,7 @@ body {
   align-items: center;
   width: 22%;
   height: 70%;
-  animation: all-rotate 1.5s ease-in-out 0.1s infinite;
+  /* animation: all-rotate 1.5s ease-in-out 0.1s infinite; */
 }
 
 div > div {
@@ -58,19 +58,11 @@ div:nth-child(5) {
   background-color: var(--dot-five);
 }
 
-@keyframes all-rotate {
+@keyframes loader-rotate-up {
   0% {
   }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-90deg);
-  }
   100% {
+    transform: rotate(90deg);
   }
 }
 
