@@ -59,10 +59,14 @@ div:nth-child(5) {
 }
 
 @keyframes loader-rotate-up {
-  0% {
-  }
   100% {
     transform: rotate(90deg);
+  }
+}
+
+@keyframes loader-rotate-down {
+  100% {
+    transform: rotate(-90deg);
   }
 }
 

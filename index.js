@@ -15,7 +15,7 @@ setInterval(() => {
   let loader_rotate_top = loader.style.animation;
 
   if (!loader_rotate_top.includes("loader-rotate-up")) {
-    loader.style.animation = "loader-rotate-up 1.5s ease-in-out 0.1s forwards";
+    loader.style.animation = "loader-rotate-up 2.5s ease-out 0.1s forwards";
   } else {
     loader.style.animation = "none";
   }
