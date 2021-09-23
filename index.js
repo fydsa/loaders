@@ -12,10 +12,20 @@ setInterval(() => {
 }, 2000);
 
 setInterval(() => {
-  let loader_rotate_top = loader.style.animation;
+  let loader_rotate_up = loader.style.animation;
 
-  if (!loader_rotate_top.includes("loader-rotate-up")) {
-    loader.style.animation = "loader-rotate-up 2.5s ease-out 0.1s forwards";
+  if (!loader_rotate_up.includes("loader-rotate-up")) {
+    loader.style.animation = "loader-rotate-up 1s ease-out 0.1s forwards";
+  } else {
+    loader.style.animation = "none";
+  }
+}, 3000);
+
+setInterval(() => {
+  let loader_rotate_down = loader.style.animation;
+
+  if (!loader_rotate_down.includes("loader-rotate-down")) {
+    loader.style.animation = "loader-rotate-down 1s ease-out 0s forwards";
   } else {
     loader.style.animation = "none";
   }
