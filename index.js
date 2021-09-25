@@ -30,3 +30,16 @@ setInterval(() => {
     loader.style.animation = "none";
   }
 }, 8000);
+
+setInterval(() => {
+  let dot_one_blink_animation = dot_one.style.animation;
+  let loader_animation = loader.style.animation;
+
+  if (
+    // !dot_one_blink_animation.includes("resize-animation") ||
+    loader_animation.includes("up") ||
+    loader_animation.includes("down")
+  ) {
+    dot_one.style.animation = "resize-animation 1s infinite 0.1s";
+  }
+}, 3000);
