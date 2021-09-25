@@ -1,5 +1,7 @@
 const dot_one = document.querySelector("div > div:nth-child(1)");
+const dot_three = document.querySelector("div > div:nth-child(3)");
 const dot_five = document.querySelector("div > div:nth-child(5)");
+const dot_two_four = document.querySelectorAll("div > div:nth-child(even)");
 
 const loader = document.querySelector(".loader");
 
@@ -14,6 +16,20 @@ setInterval(() => {
     dot_five.style.animation = "none";
   }
 }, 1000);
+
+setInterval(() => {
+  let dot_two_blink_animation = dot_two_four[0].style.animation;
+
+  if (!dot_two_blink_animation.includes("blink-animation")) {
+    dot_two_four.forEach((el) => {
+      el.style.animation = "blink-animation 0.5s infinite";
+    });
+  } else {
+    dot_two_four.forEach((el) => {
+      el.style.animation = "blink-animation 0.5s infinite";
+    });
+  }
+}, 1100);
 
 setInterval(() => {
   let loader_rotate_up = loader.style.animation;
@@ -38,9 +54,9 @@ setInterval(() => {
 setInterval(() => {
   let dot_one_blink_animation = dot_one.style.animation;
 
-  if (!dot_one_blink_animation.includes("resize-animation")) {
-    dot_one.style.animation = "resize-animation 0.7s infinite 0.1s";
-    dot_five.style.animation = "resize-animation 0.7s infinite 0.1s";
+  if (!dot_one_blink_animation.includes("resize-animation-one")) {
+    dot_one.style.animation = "resize-animation-one 0.7s infinite 0.1s";
+    dot_five.style.animation = "resize-animation-one 0.7s infinite 0.1s";
   } else {
     dot_one.style.animation = "none";
     dot_five.style.animation = "none";

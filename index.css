@@ -103,19 +103,19 @@ div:nth-child(5) {
   }
 }
 
-@keyframes resize-animation {
+@keyframes resize-animation-one {
   0% {
     height: 23px;
   }
   25% {
-    height: 150px;
+    height: 170px;
     border-radius: 15px;
   }
   50% {
     height: 23px;
   }
   75% {
-    height: 150px;
+    height: 170px;
     border-radius: 15px;
   }
   100% {
