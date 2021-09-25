@@ -5,7 +5,6 @@ const loader = document.querySelector(".loader");
 
 setInterval(() => {
   let dot_one_blink_animation = dot_one.style.animation;
-  let dot_five_blink_animation = dot_five.style.animation;
 
   if (!dot_one_blink_animation.includes("blink-animation")) {
     dot_one.style.animation = "blink-animation 0.5s infinite";
@@ -41,7 +40,9 @@ setInterval(() => {
 
   if (!dot_one_blink_animation.includes("resize-animation")) {
     dot_one.style.animation = "resize-animation 0.7s infinite 0.1s";
+    dot_five.style.animation = "resize-animation 0.7s infinite 0.1s";
   } else {
     dot_one.style.animation = "none";
+    dot_five.style.animation = "none";
   }
 }, 5000);
