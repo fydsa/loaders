@@ -62,3 +62,17 @@ setInterval(() => {
     dot_five.style.animation = "none";
   }
 }, 5000);
+
+setInterval(() => {
+  let dot_two_blink_animation = dot_two_four[0].style.animation;
+
+  if (!dot_two_blink_animation.includes("resize-animation-two")) {
+    dot_two_four.forEach((el) => {
+      el.style.animation = "resize-animation-two 0.7s infinite 0.1s";
+    });
+  } else {
+    dot_two_four.forEach((el) => {
+      el.style.animation = "resize-animation-two 0.7s infinite 0.1s";
+    });
+  }
+}, 5100);
