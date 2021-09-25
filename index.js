@@ -32,6 +32,16 @@ setInterval(() => {
 }, 1100);
 
 setInterval(() => {
+  let dot_three_blink_animation = dot_three.style.animation;
+
+  if (!dot_three_blink_animation.includes("blink-animation")) {
+    dot_three.style.animation = "blink-animation 0.5s infinite";
+  } else {
+    dot_three.style.animation = "none";
+  }
+}, 1200);
+
+setInterval(() => {
   let loader_rotate_up = loader.style.animation;
 
   if (!loader_rotate_up.includes("loader-rotate-up")) {
@@ -72,7 +82,17 @@ setInterval(() => {
     });
   } else {
     dot_two_four.forEach((el) => {
-      el.style.animation = "resize-animation-two 0.7s infinite 0.1s";
+      el.style.animation = "resize-animation-two 0.7s infinite 0.15s";
     });
   }
-}, 5100);
+}, 5000);
+
+setInterval(() => {
+  let dot_three_blink_animation = dot_three.style.animation;
+
+  if (!dot_three_blink_animation.includes("resize-animation-three")) {
+    dot_three.style.animation = "resize-animation-three 1s infinite 0.1s";
+  } else {
+    dot_three.style.animation = "none";
+  }
+}, 5000);
