@@ -62,9 +62,9 @@ setInterval(() => {
 }, 8000);
 
 setInterval(() => {
-  let dot_one_blink_animation = dot_one.style.animation;
+  let dot_one_animation = dot_one.style.animation;
 
-  if (!dot_one_blink_animation.includes("resize-animation-one")) {
+  if (!dot_one_animation.includes("resize-animation-one")) {
     dot_one.style.animation = "resize-animation-one 0.7s infinite 0.1s";
     dot_five.style.animation = "resize-animation-one 0.7s infinite 0.1s";
   } else {
@@ -74,9 +74,9 @@ setInterval(() => {
 }, 5000);
 
 setInterval(() => {
-  let dot_two_blink_animation = dot_two_four[0].style.animation;
+  let dot_two_animation = dot_two_four[0].style.animation;
 
-  if (!dot_two_blink_animation.includes("resize-animation-two")) {
+  if (!dot_two_animation.includes("resize-animation-two")) {
     dot_two_four.forEach((el) => {
       el.style.animation = "resize-animation-two 0.7s infinite 0.1s";
     });
@@ -88,9 +88,9 @@ setInterval(() => {
 }, 5000);
 
 setInterval(() => {
-  let dot_three_blink_animation = dot_three.style.animation;
+  let dot_three_animation = dot_three.style.animation;
 
-  if (!dot_three_blink_animation.includes("resize-animation-three")) {
+  if (!dot_three_animation.includes("resize-animation-three")) {
     dot_three.style.animation = "resize-animation-three 1s infinite 0.1s";
   } else {
     dot_three.style.animation = "none";
