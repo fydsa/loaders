@@ -9,37 +9,32 @@ setInterval(() => {
   let dot_one_blink_animation = dot_one.style.animation;
 
   if (!dot_one_blink_animation.includes("blink-animation")) {
-    dot_one.style.animation = "blink-animation 0.5s infinite";
-    dot_five.style.animation = "blink-animation 0.5s infinite";
+    dot_one.style.animation = "blink-animation 0.5s infinite 0s";
+    dot_five.style.animation = "blink-animation 0.5s infinite 0.2s";
   } else {
     dot_one.style.animation = "none";
     dot_five.style.animation = "none";
   }
-}, 1000);
 
-setInterval(() => {
   let dot_two_blink_animation = dot_two_four[0].style.animation;
 
   if (!dot_two_blink_animation.includes("blink-animation")) {
-    dot_two_four.forEach((el) => {
-      el.style.animation = "blink-animation 0.5s infinite";
-    });
+    dot_two_four[0].style.animation = "blink-animation 0.5s infinite 0.06s";
+    dot_two_four[1].style.animation = "blink-animation 0.5s infinite 0.16s";
   } else {
     dot_two_four.forEach((el) => {
-      el.style.animation = "blink-animation 0.5s infinite";
+      el.style.animation = "none";
     });
   }
-}, 1100);
 
-setInterval(() => {
   let dot_three_blink_animation = dot_three.style.animation;
 
   if (!dot_three_blink_animation.includes("blink-animation")) {
-    dot_three.style.animation = "blink-animation 0.5s infinite";
+    dot_three.style.animation = "blink-animation 0.5s infinite 0.12s";
   } else {
     dot_three.style.animation = "none";
   }
-}, 1200);
+}, 1000);
 
 setInterval(() => {
   let loader_rotate_up = loader.style.animation;
