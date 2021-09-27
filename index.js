@@ -60,34 +60,30 @@ setInterval(() => {
   let dot_one_animation = dot_one.style.animation;
 
   if (!dot_one_animation.includes("resize-animation-one")) {
-    dot_one.style.animation = "resize-animation-one 0.7s infinite 0.1s";
-    dot_five.style.animation = "resize-animation-one 0.7s infinite 0.1s";
+    dot_one.style.animation = "resize-animation-one 1s 0.2s";
+    dot_five.style.animation = "resize-animation-one 1s 0.2s";
   } else {
     dot_one.style.animation = "none";
     dot_five.style.animation = "none";
   }
-}, 5000);
 
-setInterval(() => {
   let dot_two_animation = dot_two_four[0].style.animation;
 
   if (!dot_two_animation.includes("resize-animation-two")) {
     dot_two_four.forEach((el) => {
-      el.style.animation = "resize-animation-two 0.7s infinite 0.1s";
+      el.style.animation = "resize-animation-two 1s 0.3s";
     });
   } else {
     dot_two_four.forEach((el) => {
-      el.style.animation = "resize-animation-two 0.7s infinite 0.15s";
+      el.style.animation = "none";
     });
   }
-}, 5000);
 
-setInterval(() => {
   let dot_three_animation = dot_three.style.animation;
 
   if (!dot_three_animation.includes("resize-animation-three")) {
-    dot_three.style.animation = "resize-animation-three 1s infinite 0.1s";
+    dot_three.style.animation = "resize-animation-three 1.2s 0.2s";
   } else {
     dot_three.style.animation = "none";
   }
-}, 5000);
+}, 3000);
